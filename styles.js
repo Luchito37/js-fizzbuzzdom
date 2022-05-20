@@ -21,22 +21,20 @@ for (let i=1; i <= 100; i++) {
 
 console.log ("calcolo dei numeri")
 
-let tre = "fizz"
 
-let cinque = "buzz"
+let tRe = "fizz";
 
-let quindici = "fizzbuzz"
+let cinQue = "buzz";
+
+const quinDici = i % 3 === 0 && i % 5 === 0;
 
 
     if(i % 3 === 0){
-        let i = tre
-        console.log("fizz")
+        console.log("fizz");
     }else if(i % 5 === 0){
-        let i = cinque
-        console.log("buzz")
-    }else if(i % 15 === 0){
-        let i = quindici
-        console.log("fizzbuzz")
+        console.log("buzz");
+    }else if(quinDici){
+        console.log("fizzbuzz");
     }
     
 }
