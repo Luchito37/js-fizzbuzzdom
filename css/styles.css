@@ -1,0 +1,25 @@
+.section-cube{
+    background-color: #083b4b;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 100px;
+    padding: 40px 0px;
+    color: white;
+}
+
+
+
+.result-list li{
+    display: inline-grid;
+    width: 136px;
+    height: 136px;
+    background-color: #1289b2;
+    justify-content: space-around;
+    align-items: center;
+    margin: 22px;
+}
+
+

@@ -16,25 +16,34 @@ sia multipli di 3 che di 5.
 */
 
 
+for (let i = 1; i <= 100; i++) {
 
-for (let i=1; i <= 100; i++) {
 
 console.log ("calcolo dei numeri")
 
+let text = "";
 
-let tRe = "fizz";
-
-let cinQue = "buzz";
-
-let quinDici = i % 3 === 0 && i % 5 === 0;
-
-
-if(i % 5 ==0 && i % 3==0){
+if(i % 3 == 0 && i % 5 == 0){
+    text= "fizzbuzz" ;
     console.log("fizzbuzz");
 }else if(i % 5 === 0){
+    text= "buzz" ;
     console.log("buzz");
 }else if(i % 3 === 0){
+    text= " fizz" ;
     console.log("fizz");
 }
-    
+
+console.log (text)
+
+const resultListHtml = document.querySelector(".result-list");
+
+
+
+
+resultListHtml.innerHTML += `<li>
+                                ${i} ${text}
+
+                                </li>`; 
+
 }
