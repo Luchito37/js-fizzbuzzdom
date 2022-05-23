@@ -10,14 +10,19 @@
     color: white;
 }
 
-
+.result-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    text-align: center;
+}
 
 .result-list li{
-    display: inline-grid;
+    display: flex;
     width: 136px;
     height: 136px;
     background-color: #1289b2;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 22px;
 }

@@ -16,23 +16,34 @@ sia multipli di 3 che di 5.
 */
 
 
+let text = "";
+
+
 for (let i = 1; i <= 100; i++) {
 
 
 console.log ("calcolo dei numeri")
 
 let text = "";
+let colorClass = "";
 
 if(i % 3 == 0 && i % 5 == 0){
     text= "fizzbuzz" ;
+    colorClass= "bg-danger"
     console.log("fizzbuzz");
 }else if(i % 5 === 0){
     text= "buzz" ;
+    colorClass= "bg-warning"
     console.log("buzz");
 }else if(i % 3 === 0){
     text= " fizz" ;
+    colorClass= "bg-success"
     console.log("fizz");
+}else{
+    text= i.toString()
 }
+
+//si potrebbe anche fare " let text = i.toString()"
 
 console.log (text)
 
@@ -41,9 +52,8 @@ const resultListHtml = document.querySelector(".result-list");
 
 
 
-resultListHtml.innerHTML += `<li>
-                                ${i} ${text}
-
+resultListHtml.innerHTML += `<li class="${colorClass}">
+                                ${text}
                                 </li>`; 
 
 }
